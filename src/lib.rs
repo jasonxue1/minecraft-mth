@@ -7,12 +7,10 @@ use cos_tab::COS_TAB;
 use num_traits::{Euclid, Float, FromPrimitive, Signed};
 use sin_table::SIN;
 
-pub const PI: f32 = std::f32::consts::PI;
-pub const PI_64: f64 = std::f64::consts::PI;
+const PI: f32 = std::f32::consts::PI;
+const PI_64: f64 = std::f64::consts::PI;
 pub const DEG_TO_RAD: f32 = PI / 180.0;
 pub const RAD_TO_DEG: f32 = 180.0 / PI;
-pub const EPSILON: f32 = 1.0E-5;
-pub const SQRT_OF_TWO: f32 = std::f32::consts::SQRT_2;
 const SIN_SCALE: f64 = 10430.378350470453;
 const ONE_SIXTH: f64 = 0.16666666666666666;
 const FRAC_BIAS: f64 = f64::from_bits(4805340802404319232u64);
