@@ -6,9 +6,9 @@ use asin_tab::ASIN_TAB;
 use cos_tab::COS_TAB;
 use num_traits::{Euclid, Float, FromPrimitive, Signed};
 use sin_table::SIN;
+use std::f32::consts::PI;
+use std::f64::consts::PI as PI_64;
 
-const PI: f32 = std::f32::consts::PI;
-const PI_64: f64 = std::f64::consts::PI;
 pub const DEG_TO_RAD: f32 = PI / 180.0;
 pub const RAD_TO_DEG: f32 = 180.0 / PI;
 const SIN_SCALE: f64 = 10430.378350470453;
