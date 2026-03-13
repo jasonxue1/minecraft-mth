@@ -200,7 +200,7 @@ pub fn atan2(y: f64, x: f64) -> f64 {
     y *= rinv;
 
     let yp = FRAC_BIAS + y;
-    let index = yp.to_bits() as usize;
+    let index = (yp.to_bits() & 0xFFFF_FFFF) as usize;
     let phi = ASIN_TAB[index];
     let c_phi = COS_TAB[index];
     let s_phi = yp - FRAC_BIAS;
